@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomaly Hunt - Expose Forbidden History</title>
+    <style>
+        /* Baked-in Styles - No CDN Needed */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background: linear-gradient(135deg, #0f0f23 0%, #1a0033 100%);
+            color: white; 
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 5rem 1.5rem; text-align: center; }
+        h1 { 
+            font-size: 4rem; font-weight: bold; 
+            background: linear-gradient(45deg, #00ff88, #00ccff); 
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(0,255,136,0.5); margin-bottom: 2rem; 
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow { from { filter: drop-shadow(0 0 5px #00ff88); } to { filter: drop-shadow(0 0 20px #00ff88); } }
+        p.big { font-size: 1.5rem; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto; opacity: 0.9; }
+        .map-container { background: #1a1a2e; padding: 2rem; border-radius: 1rem; margin-bottom: 3rem; border: 2px solid #00ff88; box-shadow: 0 10px 30px rgba(0,255,136,0.3); }
+        iframe { width: 100%; height: 300px; border-radius: 0.5rem; border: 2px solid #00ff88; }
+        form { max-width: 400px; margin: 0 auto 3rem; }
+        input { width: 100%; padding: 1rem; background: #1a1a2e; border: 2px solid #00ff88; border-radius: 1rem; font-size: 1.2rem; color: white; margin-bottom: 1rem; }
+        input::placeholder { color: #888; }
+        button { 
+            width: 100%; padding: 1.2rem; background: linear-gradient(45deg, #00ff88, #00ccff); 
+            border: none; border-radius: 1rem; font-size: 1.3rem; font-weight: bold; 
+            cursor: pointer; transition: all 0.3s; color: #000;
+        }
+        button:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(0,255,136,0.5); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1000px; margin: 4rem auto 0; }
+        .feature { background: #1a1a2e; padding: 2rem; border-radius: 1rem; border: 1px solid #00ff88; box-shadow: 0 5px 20px rgba(0,0,0,0.5); }
+        .feature h3 { font-size: 1.8rem; margin-bottom: 1rem; color: #00ff88; }
+        footer { margin-top: 4rem; opacity: 0.7; font-size: 0.9rem; }
+        @media (max-width: 768px) { h1 { font-size: 2.5rem; } .container { padding: 2rem 1rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Anomaly Hunt</h1>
+        <p class="big">Hunt lost truths. AR Earth map for ancient sites. Upload anomalies, debate theories, book expeditions. Powered by AI Truth Engine. No mainstream BS.</p>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.3!2d39.0261!3d37.2233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDEzJzIzLjkiTiAzOcKwMDEnMzQuMCJF!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p style="margin-top: 1rem; color: #00ff88;">Göbekli Tepe – Pin your anomaly!</p>
+        </div>
+        
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <input type="email" name="email" placeholder="Email for Beta Access + Exclusive Report" required="">
+            <button type="submit">JOIN THE HUNT – FREE BETA</button>
+        </form>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>AR Hunts</h3>
+                <p>Phone AR overlays on ruins.</p>
+            </div>
+            <div class="feature">
+                <h3>AI Truth Engine</h3>
+                <p>Analyze uploads for anomalies.</p>
+            </div>
+            <div class="feature">
+                <h3>Expedition Booker</h3>
+                <p>Flights, hotels, safety scores.</p>
+            </div>
+        </div>
+        
+        <footer>© 2024 Anomaly Hunt – Confidential Prototype. All Rights Reserved.</footer>
+    </div>
+
+
+</body></html>
